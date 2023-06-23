@@ -6,13 +6,13 @@ main()
 {
    int marks[5];
 
-   for(int i=0;i<marks[5];i++)
+   for(int i=0;i<sizeof(marks)/sizeof(int); i++)
    {
-    cout<<"\nEnter your marks";
+    cout<<"\nEnter your marks: ";
     cin>>marks[i];
    }
 
-    for(int i=0;i<marks[5];i++)
+    for(int i=0;i<sizeof(marks)/sizeof(int);i++)
    {
     cout<<"\nThe marks are: "<<marks[i];
    }
